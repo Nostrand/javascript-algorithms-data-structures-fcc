@@ -19,13 +19,13 @@ Built a simple calorie counter web app, validated user input and performed calcu
 ### Rock, Paper, Scissors game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/rock-paper-scissors/index.html)
 Created a simple text role playing game, to practice fundamental programming concepts.
 <div align="center">
-  <img src="preview-images/rock-paper-scissors.png" alt="Rock, Paper, Scissors game" width=600>
+  <img src="preview-images/rock-paper-scissors.jpg" alt="Rock, Paper, Scissors game" width=600>
 </div>
 
 ### Music player - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/music-player/index.html)
 Assembled a basic MP3 music player.
 <div align="center">
-  <img src="preview-images/date-formatter.png" alt="Date formatter." width=600>
+  <img src="preview-images/music-player.jpg" alt="Date formatter." width=600>
 </div>
 
 
@@ -49,13 +49,13 @@ I leveraged the JavaScript Date object to work with dates and customize their fo
 ### Football cards - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/football-cards/index.html)
 Crafted football player cards applying DOM manipulation, object deestructuring, event handling and data filtering.
 <div align="center">
-  <img src="preview-images/football-cards.png" alt="Football player cards." width=600>
+  <img src="preview-images/football-cards.jpg" alt="Football player cards" width=600>
 </div>
 
 ### Todo app - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/todo-app/index.html)
 Handled form inputs, managed local storage, perform CRUD operations and toggle UI elements.
 <div align="center">
-  <img src="preview-images/todo-app.png" alt="Todo app." width=600>
+  <img src="preview-images/todo-app.jpg" alt="Todo app." width=600>
 </div>
 
 
@@ -73,5 +73,5 @@ Handled form inputs, managed local storage, perform CRUD operations and toggle U
 ### Simple platformer game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/platform-game/index.html)
 Created a simple platformer game, to practice OOP concepts.
 <div align="center">
-  <img src="preview-images/platformer-game.png" alt="Simple platformer game" width=600>
+  <img src="preview-images/platformer-game.jpg" alt="Simple platformer game" width=600>
 </div>
