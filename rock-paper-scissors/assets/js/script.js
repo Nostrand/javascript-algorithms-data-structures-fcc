@@ -1,9 +1,11 @@
+// Function to randomly select a computer choice: Rock, Paper, or Scissors
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
   }
   
+  // Function to determine if the player has won the round
   function hasPlayerWonTheRound(player, computer) {
     return (
       (player === "Rock" && computer === "Scissors") ||
@@ -12,9 +14,11 @@ function getRandomComputerResult() {
     );
   }
   
+  // Initialize player and computer scores
   let playerScore = 0;
   let computerScore = 0;
   
+  // Function to get the results of the current round
   function getRoundResults(userOption) {
     const computerResult = getRandomComputerResult();
   
@@ -29,6 +33,7 @@ function getRandomComputerResult() {
     }
   }
   
+  // Get references to DOM elements for displaying scores and results
   const playerScoreSpanElement = document.getElementById("player-score");
   const computerScoreSpanElement = document.getElementById("computer-score");
   const roundResultsMsg = document.getElementById("results-msg");
@@ -36,6 +41,7 @@ function getRandomComputerResult() {
   const optionsContainer = document.querySelector(".options-container");
   const resetGameBtn = document.getElementById("reset-game-btn");
   
+  // Function to display the results of the current round
   function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
     computerScoreSpanElement.innerText = computerScore;
@@ -52,6 +58,7 @@ function getRandomComputerResult() {
   
   };
 
+  // Function to reset the game state
   function resetGame() {
     playerScore = 0;
     computerScore = 0;
@@ -63,12 +70,15 @@ function getRandomComputerResult() {
     roundResultsMsg.innerText = "";
   
   };
+  // Event listener for the reset game button
   resetGameBtn.addEventListener("click", resetGame);
 
+// Get references to buttons for player choices
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 
+// Event listeners for player choice buttons
 rockBtn.addEventListener("click", function () {
   showResults("Rock");
 });

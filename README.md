@@ -16,8 +16,62 @@ Built a simple calorie counter web app, validated user input and performed calcu
   <img src="preview-images/calorie-counter.png" alt="Calorie counter web app." width=600>
 </div>
 
+### Rock, Paper, Scissors game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/rock-paper-scissors/index.html)
+Created a simple text role playing game, to practice fundamental programming concepts.
+<div align="center">
+  <img src="preview-images/rock-paper-scissors.png" alt="Rock, Paper, Scissors game" width=600>
+</div>
+
+### Music player - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/music-player/index.html)
+Assembled a basic MP3 music player.
+<div align="center">
+  <img src="preview-images/date-formatter.png" alt="Date formatter." width=600>
+</div>
+
+
+### Main Project - Palindrome Checker - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/project-palindrome-checker/index.html)
+The goal of this project was to build a simple application that checks whether a given word is a palindrome.
+<div align="center">
+  <img src="preview-images/palindrome-checker.jpg" alt="Project Palindrome checker preview" width=800>
+</div>
+
+---
+
+## Section 2
+### Mini-Projects:
+
 ### Date formatter - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/date-formatter/index.html)
 I leveraged the JavaScript Date object to work with dates and customize their formatting.
 <div align="center">
   <img src="preview-images/date-formatter.png" alt="Date formatter." width=600>
+</div>
+
+### Football cards - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/football-cards/index.html)
+Crafted football player cards applying DOM manipulation, object deestructuring, event handling and data filtering.
+<div align="center">
+  <img src="preview-images/football-cards.png" alt="Football player cards." width=600>
+</div>
+
+### Todo app - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/todo-app/index.html)
+Handled form inputs, managed local storage, perform CRUD operations and toggle UI elements.
+<div align="center">
+  <img src="preview-images/todo-app.png" alt="Todo app." width=600>
+</div>
+
+
+---
+
+## Section 3
+### Mini-Projects:
+
+---
+
+## Section 4
+### Mini-Projects:
+
+
+### Simple platformer game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/platform-game/index.html)
+Created a simple platformer game, to practice OOP concepts.
+<div align="center">
+  <img src="preview-images/platformer-game.png" alt="Simple platformer game" width=600>
 </div>
