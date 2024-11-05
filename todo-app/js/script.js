@@ -1,4 +1,4 @@
-// Get references to DOM elements
+// References to HTML elements
 const taskForm = document.getElementById("task-form");
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const openTaskFormBtn = document.getElementById("open-task-form-btn");
@@ -11,42 +11,49 @@ const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
-// Load existing tasks from localStorage or initialize as an empty array
+// Initialize task data from local storage
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {};
 
-// Function to add a new task or update an existing task
-const addOrUpdateTask = () => {
-  addOrUpdateTaskBtn.innerText = "Add Task";
+// Function to remove special characters from strings
+const removeSpecialChars = (val) => {
+  return val.trim().replace(/[^A-Za-z0-9\-\s]/g, '')
+}
 
-  // Find index of the current task in the taskData array
+// Function to add a new task or update one
+const addOrUpdateTask = () => {
+   if(!titleInput.value.trim()){
+    alert("Please provide a title");
+    return;
+  }
+  // Check if the task is new or existing by checking the task array
   const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
 
-  // Create a new task object with a unique ID and input values
+  // Create a task object with cleaned inputs
   const taskObj = {
-    id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
-    title: titleInput.value,
+    id: `${removeSpecialChars(titleInput.value).toLowerCase().split(" ").join("-")}-${Date.now()}`,
+    title: removeSpecialChars(titleInput.value),
     date: dateInput.value,
-    description: descriptionInput.value,
+    description: removeSpecialChars(descriptionInput.value),
   };
 
-  // If the task is new (not found in the array), add it to the beginning
-  if (dataArrIndex === -1) {
+  if (dataArrIndex === -1) { // If new task, add to the beginning of the array
     taskData.unshift(taskObj);
-  } else {
+  } else { // If existing task, update it in the array
     taskData[dataArrIndex] = taskObj;
   }
 
-  // Save the updated tasks array to localStorage
+  // Save updated task data to local storage and update the UI
   localStorage.setItem("data", JSON.stringify(taskData));
   updateTaskContainer()
   reset()
 };
 
-// Function to update the display of tasks in the container
+// Function to render tasks in the container
 const updateTaskContainer = () => {
   tasksContainer.innerHTML = "";
 
+  // Loop through each task and add HTML for each task to the container
   taskData.forEach(
     ({ id, title, date, description }) => {
         (tasksContainer.innerHTML += `
@@ -62,18 +69,20 @@ const updateTaskContainer = () => {
   );
 };
 
-// Function to delete a task from the list
+// Function to delete a task
 const deleteTask = (buttonEl) => {
+  // Find index of the task to delete based on its ID
   const dataArrIndex = taskData.findIndex(
     (item) => item.id === buttonEl.parentElement.id
   );
 
+  // Remove the task from the DOM and task array, then update local storage
   buttonEl.parentElement.remove();
   taskData.splice(dataArrIndex, 1);
   localStorage.setItem("data", JSON.stringify(taskData));
 }
 
-// Function to edit an existing task
+// Function to edit a task
 const editTask = (buttonEl) => {
     const dataArrIndex = taskData.findIndex(
     (item) => item.id === buttonEl.parentElement.id
@@ -81,6 +90,7 @@ const editTask = (buttonEl) => {
 
   currentTask = taskData[dataArrIndex];
 
+  // Populate form with existing task data for editing
   titleInput.value = currentTask.title;
   dateInput.value = currentTask.date;
   descriptionInput.value = currentTask.description;
@@ -90,8 +100,9 @@ const editTask = (buttonEl) => {
   taskForm.classList.toggle("hidden");  
 }
 
-// Function to reset the form inputs and hide the form
+// Function to reset the form and current task
 const reset = () => {
+  addOrUpdateTaskBtn.innerText = "Add Task";
   titleInput.value = "";
   dateInput.value = "";
   descriptionInput.value = "";
@@ -99,17 +110,17 @@ const reset = () => {
   currentTask = {};
 }
 
-// If there are tasks in localStorage, update the task container on load
-if(taskData.length){
+// Initial rendering of tasks if there are any saved
+if (taskData.length) {
   updateTaskContainer();
 }
 
-// Event listener to open the task form
+// Event listener to show the task form when "Add Task" button is clicked
 openTaskFormBtn.addEventListener("click", () =>
   taskForm.classList.toggle("hidden")
 );
 
-// Event listener to handle closing the task form with confirmation
+// Event listener to handle form close confirmation if there are unsaved changes
 closeTaskFormBtn.addEventListener("click", () => {
   const formInputsContainValues = titleInput.value || dateInput.value || descriptionInput.value;
   const formInputValuesUpdated = titleInput.value !== currentTask.title || dateInput.value !== currentTask.date || descriptionInput.value !== currentTask.description;
@@ -121,16 +132,16 @@ closeTaskFormBtn.addEventListener("click", () => {
   }
 });
 
-// Event listener to cancel closing the form
+// Event listener to cancel form close in confirmation dialog
 cancelBtn.addEventListener("click", () => confirmCloseDialog.close());
 
-// Event listener to discard changes and reset the form
+// Event listener to discard changes and close the form in confirmation dialog
 discardBtn.addEventListener("click", () => {
   confirmCloseDialog.close();
   reset()
 });
 
-// Event listener to handle form submission
+// Handle task form submission
 taskForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
