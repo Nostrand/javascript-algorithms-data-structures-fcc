@@ -17,7 +17,7 @@ Built a simple calorie counter web app, validated user input and performed calcu
 </div>
 
 ### Rock, Paper, Scissors game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/rock-paper-scissors/index.html)
-Created a simple text role playing game, to practice fundamental programming concepts.
+Developed a simple interactive Rock, Paper, Scissors game to practice basic programming concepts using JavaScript.
 <div align="center">
   <img src="preview-images/rock-paper-scissors.jpg" alt="Rock, Paper, Scissors game" width=600>
 </div>
@@ -64,6 +64,12 @@ Handled form inputs, managed local storage, perform CRUD operations and toggle U
 ## Section 3
 ### Mini-Projects:
 
+### Simple spam filter - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/spam-filter/index.html)
+A simple spam detection tool that checks user messages for common spam phrases using regular expressions. It flags messages containing keywords like "free money," "please help," or dollar amounts.
+<div align="center">
+  <img src="preview-images/spam-filter.jpg" alt="Spam filter" width=600>
+</div>
+
 ---
 
 ## Section 4
@@ -74,4 +80,16 @@ Handled form inputs, managed local storage, perform CRUD operations and toggle U
 Created a simple platformer game, to practice OOP concepts.
 <div align="center">
   <img src="preview-images/platformer-game.jpg" alt="Simple platformer game" width=600>
+</div>
+
+---
+
+## Section 5
+### Mini-Projects:
+
+
+### fCC Authors page - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/fcc-authors-page/index.html)
+Fetched and displayed author data using fetch and Promises. Implemented dynamic DOM updates and pagination to load content in batches.
+<div align="center">
+  <img src="preview-images/fcc-authors-page.jpg" alt="fCC Authors page" width=600>
 </div>
