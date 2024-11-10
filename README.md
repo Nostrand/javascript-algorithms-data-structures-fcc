@@ -76,6 +76,12 @@ A simple spam detection tool that checks user messages for common spam phrases u
 ### Mini-Projects:
 
 
+### Shopping cart - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/shopping-cart/index.html)
+A simple shopping cart. Users can add products to the cart, view subtotal / taxes / total, and clear the cart.
+<div align="center">
+  <img src="preview-images/shopping-cart.jpg" alt="Shopping cart app" width=600>
+</div>
+
 ### Simple platformer game - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/platform-game/index.html)
 Created a simple platformer game, to practice OOP concepts.
 <div align="center">
