@@ -70,6 +70,12 @@ A simple spam detection tool that checks user messages for common spam phrases u
   <img src="preview-images/spam-filter.jpg" alt="Spam filter" width=600>
 </div>
 
+### Number sorter - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/number-sorter/index.html)
+This mini project involves sorting an array of numbers selected from dropdowns using different sorting algorithms (Bubble Sort, Selection Sort, Insertion Sort), and the sort method, and updating the UI with the sorted values.
+<div align="center">
+  <img src="preview-images/number-sorter.jpg" alt="Number sorter" width=600>
+</div>
+
 ---
 
 ## Section 4
