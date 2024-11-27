@@ -76,6 +76,12 @@ This mini project involves sorting an array of numbers selected from dropdowns u
   <img src="preview-images/number-sorter.jpg" alt="Number sorter" width=600>
 </div>
 
+### Statistics calculator - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/statistics-calculator/index.html)
+This mini project calculates key statistical values from an array of numbers entered by the user. It calculates the mean, median, mode, range, variance, and standard deviation, and displays the results on the webpage. The user inputs numbers as a comma-separated list, and the project computes and updates the statistical values dynamically using JavaScript functions.
+<div align="center">
+  <img src="preview-images/statistics-calculator.jpg" alt="Statistics calculator" width=600>
+</div>
+
 ---
 
 ## Section 4
