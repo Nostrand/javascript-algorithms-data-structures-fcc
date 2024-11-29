@@ -109,5 +109,11 @@ Created a simple platformer game, to practice OOP concepts.
 ### fCC Authors page - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/fcc-authors-page/index.html)
 Fetched and displayed author data using fetch and Promises. Implemented dynamic DOM updates and pagination to load content in batches.
 <div align="center">
-  <img src="preview-images/fcc-authors-page.jpg" alt="fCC Authors page" width=600>
+  <img src="preview-images/fcc-authors-page.jpg" alt="freeCodeCamp Authors page" width=600>
+</div>
+
+### fCC Forum leaderboard - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/fcc-forum-learderboard/index.html)
+Fetched and displayed the latest forum posts from the freeCodeCamp community using the fetch API. Dynamically rendered post data including titles, view counts, time ago, avatars, and categories. The avatars are displayed using image URLs fetched from the FreeCodeCamp CDN, while post details are dynamically updated to show the latest activity and user interaction.
+<div align="center">
+  <img src="preview-images/fcc-forum-leaderboard.jpg" alt="freeCodeCamp forum leaderboard" width=600>
 </div>
