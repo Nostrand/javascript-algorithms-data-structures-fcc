@@ -1,5 +1,15 @@
 # Javascript Algorithms and Data Structures Certification
- Mini-Projects from the [Javascript Algorithms and Data Structures by freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/).
+ Projects from the [Javascript Algorithms and Data Structures by freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/).
+
+There are two kinds of projects in this repo:
+
+### Mini-Projects
+
+Mini-projects are guided tutorial projects designed to teach specific concepts in JavaScript. Each mini-project includes a predefined number of steps that guide you through solving specific tasks until the project is complete. The HTML and CSS are provided, allowing the focus to remain on implementing the JavaScript logic to achieve the desired functionality.
+
+### Main Projects (Certification Projects)
+
+Main projects are independent certification projects that assess the ability to build applications from the ground up. Unlike mini-projects, no starter code is provided. Instead, you are given a project brief that outlines the end goal, instructions, and guidelines for ensuring the project meets the requirements for automated evaluation.
 
 ## Section 1
 ### Mini-Projects:
@@ -81,6 +91,13 @@ This mini project calculates key statistical values from an array of numbers ent
 <div align="center">
   <img src="preview-images/statistics-calculator.jpg" alt="Statistics calculator" width=600>
 </div>
+
+### Spreadsheet - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/spreadsheet/index.html)
+This project is a lightweight spreadsheet application that allows users to perform calculations, evaluate formulas, and manage data dynamically. Users can input data into cells, reference other cells in formulas, and use built-in functions such as sum, average, and median. The app supports range-based operations, custom formula evaluation, and seamless updates using JavaScript. This interactive tool is ideal for basic data management and analysis.
+<div align="center">
+  <img src="preview-images/spreadsheet.jpg" alt="Spreadsheet" width=600>
+</div>
+
 
 ---
 
