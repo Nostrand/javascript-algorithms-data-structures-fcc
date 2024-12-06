@@ -68,6 +68,12 @@ Handled form inputs, managed local storage, perform CRUD operations and toggle U
   <img src="preview-images/todo-app.jpg" alt="Todo app." width=600>
 </div>
 
+### Decimal to binary converter - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/decimal-to-binary/index.html)
+Built a recursive decimal-to-binary converter, with a dynamic call stack animation for one example case.
+<div align="center">
+  <img src="preview-images/decimal-to-binary.jpg" alt="Decimal to binary converter app" width=600>
+</div>
+
 
 ---
 
