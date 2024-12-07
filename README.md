@@ -74,6 +74,11 @@ Built a recursive decimal-to-binary converter, with a dynamic call stack animati
   <img src="preview-images/decimal-to-binary.jpg" alt="Decimal to binary converter app" width=600>
 </div>
 
+### Main Project - Roman Numeral Converter - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/project-roman-numeral-converter/index.html)
+The goal of this project was to create a tool that converts numbers (from 1 to 3999) to their corresponding Roman numeral representation.
+<div align="center">
+  <img src="preview-images/roman-numeral-converter.jpg" alt="Roman numeral converter" width=800>
+</div>
 
 ---
 
