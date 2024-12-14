@@ -145,3 +145,9 @@ Fetched and displayed the latest forum posts from the freeCodeCamp community usi
 <div align="center">
   <img src="preview-images/fcc-forum-leaderboard.jpg" alt="freeCodeCamp forum leaderboard" width=600>
 </div>
+
+### Main Project - Poké Search App - [Live View](https://nostrand.github.io/javascript-algorithms-data-structures-fcc/project-poke-search/index.html)
+Built a dynamic Pokémon search app that fetches and displays detailed data from the PokéAPI Proxy.
+<div align="center">
+  <img src="preview-images/poke-search.jpg" alt="Poke search app showing Charizard's data and stats" width=600>
+</div>

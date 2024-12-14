@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light background for better contrast */
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-section {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Optionally center vertically */
+  gap: 10px; /* Optional: adds spacing between the input and button */
+}
+
+/* Container for the types */
+.types-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+#weight, #height {
+  margin-right: 10px; /* Adds space between the weight and height elements */
+}
+#sprite {
+  width: 150px;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+/* Style for each type box */
+.type-box {
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  color: black;
+}
+
+/* Type-specific colors */
+.type-box.bug { background-color: #A8B820; }
+.type-box.dark { background-color: #705848; }
+.type-box.dragon { background-color: #7038F8; }
+.type-box.electric { background-color: #F8D030; }
+.type-box.fairy { background-color: #EE99AC; }
+.type-box.fighting { background-color: #C03028; }
+.type-box.fire { background-color: #F08030; }
+.type-box.flying { background-color: #A890F0; }
+.type-box.ghost { background-color: #705898; }
+.type-box.grass { background-color: #78C850; }
+.type-box.ground { background-color: #E0C068; }
+.type-box.ice { background-color: #98D8D8; }
+.type-box.normal { background-color: #A8A878; }
+.type-box.poison { background-color: #A040A0; }
+.type-box.psychic { background-color: #F85888; }
+.type-box.rock { background-color: #B8A038; }
+.type-box.steel { background-color: #B8B8D0; }
+.type-box.water { background-color: #6890F0; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Light background for the table */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #007bff; /* Header color */
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row color */
+}
