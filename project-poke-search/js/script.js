@@ -37,8 +37,8 @@ const fetchPokemonData = (query) => {
     // Update name, id, weight, height, types
     document.getElementById("pokemon-name").innerText = `${name.toUpperCase()}`;
     document.getElementById("pokemon-id").innerText = `#${id}`;
-    document.getElementById("weight").innerText = `Weight: ${weight}`;
-    document.getElementById("height").innerText = `Height: ${height}`;
+    document.getElementById("weight").innerText = `Weight: ${weight / 10} kg`;
+    document.getElementById("height").innerText = `Height: ${height / 10} m`;
 
     // Clear the previous image (if any) without clearing other data
     const resultsContainer = document.getElementById("results");

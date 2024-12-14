@@ -36,8 +36,13 @@ h1 {
   gap: 5px;
   margin-top: 10px;
 }
+
+#pokemon-name, #pokemon-id {
+  margin-right: 5px; /* Adds space between the weight and height elements */
+}
+
 #weight, #height {
-  margin-right: 10px; /* Adds space between the weight and height elements */
+  margin-right: 10px;
 }
 #sprite {
   width: 150px;
